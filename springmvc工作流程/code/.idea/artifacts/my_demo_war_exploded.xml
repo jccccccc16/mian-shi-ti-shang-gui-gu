@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="my-demo:war exploded">
+    <output-path>$PROJECT_DIR$/my-demo/target/my-demo-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>my-demo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="my-demo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.20.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.20.RELEASE" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/my-demo/target/my-demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="my-demo/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cjc.mapper.UserMapper">
+
+    <resultMap id="baseResultMap" type="com.cjc.entity.User">
+        <id property="id" column="id"/>
+        <result property="userAcct" column="username"/>
+        <result property="userPswd" column="password"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="baseResultMap">
+        select * from test_user
+    </select>
+
+</mapper>
